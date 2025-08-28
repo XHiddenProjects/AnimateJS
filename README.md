@@ -88,6 +88,42 @@ animate.animate(container,'custom.rainbow',{
 
 ***
 
+## KeyFrames
+Keyframes are what is placed inside each `timeline`
+
+**Methods:**
+
+| Methods | Code | Description |
+| ------- | ---- | ----------- |
+| Rotate  | `Rotate(degree)` | Rotate the object by degree |
+| RotateX  | `RotateX(degree)` | Rotate the object by X-axis |
+| RotateY  | `RotateY(degree)` | Rotate the object by Y-axis |
+| RotateZ  | `RotateZ(degree)` | Rotate the object by Z-axis |
+| Rotate3D  | `Rotate3D(x, y, z, degree)` | Rotate the object by 3D |
+| skew  | `skew(xDeg, yDeg)` | Skew the object |
+| skewX  | `skewX(xDeg)` | Skew the object by x-axis |
+| skewY  | `skewY(yDeg)` | Skew the object by y-axis |
+| Scale  | `Scale(sx, sy)` | Scale the object by size |
+| ScaleX  | `ScaleX(sx)` | Scale the object by X-axis |
+| ScaleY  | `ScaleY(sy)` | Scale the object by Y-axis |
+| ScaleZ  | `ScaleZ(sz)` | Scale the object by Z-axis |
+| Scale3D  | `Scale3D(sx, sy, sz)` | Scale the object by 3D |
+| perspective | `perspective(distance)` | Adds perspective transformation. |
+| transition | `transition(...string)` | transition properties |
+| border | `border(width, style, color, ...locations)` | Border style |
+| boxShadow | `boxShadow(...{h:number, v: number, blur: number, spread: number, color: string})` | Box shadow to object |
+| fontShadow | `fontShadow(...{h:number, v:number, blur: number, color: string})` | Text shadow to object |
+| color | `color(color)` | Color to object |
+| opacity | `opacity(value)` | Opacity to object |
+| background | `background(...backgrounds)` | Combines background values |
+| matrix | `matrix(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p)` | Applies a 4x4 matrix transformation. |
+| matrix3D | `matrix3D(a1, b1, c1, d1, a2, b2, c2, d2, a3, b3, c3, d3, a4, b4, c4, d4)` | Applies a 3D matrix transformation. |
+| clear | `clear()` | clears everything to default |
+
+
+
+***
+
 ## Built in animations
 | Animation | Path |
 | --------- | ---- |
