@@ -41,6 +41,8 @@ You can check out the in-built [animations](#built-in-animations)
 ## Running multiple animations (Sequentially)
 To execute animation as step process you will have to use the `run()` method
 ```js
+const animate = new AnimateJS(),
+[container] = animate.Utils.$('.my-cube');
 // Run animations sequentially
 animate.run(
     () => animate.animate(myElement, 'fade.in', {duration: 1000}),
