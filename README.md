@@ -38,7 +38,7 @@ You can check out the in-built [animations](#built-in-animations)
 
 ***
 
-## Running multiple animations (Stepped)
+## Running multiple animations (Sequentially)
 To execute animation as step process you will have to use the `run()` method
 ```js
 // Run animations sequentially
