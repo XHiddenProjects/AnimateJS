@@ -38,9 +38,16 @@ You can check out the in-built [animations](#built-in-animations)
 
 ***
 
-
-
-
+## Running multiple animations (Stepped)
+To execute animation as step process you will have to use the `run()` method
+```js
+// Run animations sequentially
+animate.run(
+    () => animate.animate(myElement, 'fade.in', {duration: 1000}),
+    () => animate.animate(myElement, 'rotate.clockwise', {duration: 1000, delay: 500}),
+    () => animate.animate(myElement, 'slide.outRight', {duration: 1000, delay: 500})
+);
+```
 
 ***
 
