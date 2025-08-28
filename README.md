@@ -25,3 +25,20 @@ const animate = new AnimateJS(),
 
 animate.animate(container,'fade.in');
 ```
+You can check out the in-built [animations](#built-in-animations)
+
+***
+
+## Built in animatations
+| Animation | Path |
+| --------- | ---- |
+| FadeIn    | fade.in |
+| FadeOut   | fade.out |
+| FadeInTop    | fade.inTop |
+| FadeOutTop   | fade.outTop |
+| FadeInRight    | fade.inRight |
+| FadeOutRight   | fade.outRight |
+| FadeInBottom    | fade.inBottom |
+| FadeOutBottom   | fade.outBottom |
+| FadeInLeft    | fade.inLeft |
+| FadeOutLeft   | fade.outLeft |
