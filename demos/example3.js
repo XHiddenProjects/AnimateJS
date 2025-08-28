@@ -31,7 +31,7 @@ const custom3DAnimation = new AnimationJS('custom', 'rotateScale3D')
 animator.add(custom3DAnimation);
 
 // Select the element to animate
-const [cube] = animate.Utils.$('.my-cube');
+const [cube] = animator.Utils.$('.my-cube');
 
 // Trigger the 3D animation
 animator.animate(cube, 'custom.rotateScale3D', {
