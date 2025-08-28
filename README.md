@@ -25,11 +25,11 @@ const animate = new AnimateJS(),
 
 animate.animate(container,'fade.in');
 ```
-You can check out the in-built [animations](#built-in-animatations)
+You can check out the in-built [animations](#built-in-animations)
 
 ***
 
-## Built in animatations
+## Built in animations
 | Animation | Path |
 | --------- | ---- |
 | FadeIn    | fade.in |
