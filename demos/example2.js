@@ -1,13 +1,14 @@
  // Initialize AnimateJS
-  const animate = new AnimateJS();
+  const animate = new AnimateJS(),
+   box = animate.Utils.$('#box');
 
   // Example: Animate on load
-  animate.load(document.querySelector('#box'), (a, el) => {
+  animate.load(box, (a, el) => {
     a.Animations.fade.in(el, a.EASE, a.MODERATE);
   });
 
   // Example: Animate on hover
-  animate.hover(document.querySelector('#box'), (a, el) => {
+  animate.hover(box, (a, el) => {
     a.Animations.fade.in(el, a.EASE, a.FAST);
   }, (a, el) => {
     a.Animations.fade.out(el, a.EASE, a.FAST);
