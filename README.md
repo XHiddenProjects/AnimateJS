@@ -53,6 +53,41 @@ animate.run(
 
 ***
 
+## Custom Animations
+To create custom animation you will need 2 classes `AnimationJS()` and `KeyFrames()`
+
+Here is an example:
+```js
+const animate = new AnimateJS(),
+[container] = animate.Utils.$('.text');
+
+const frame = new KeyFrames();
+// AnimationJS(pathName); The path would be "custom.rainbow"
+const bounceAnimation = new AnimationJS('custom', 'rainbow')
+    // createTimeline(percentage|from-to, KeyFrames)
+    .createTimeline('0', frame.fontShadow('0 0 2px red').color('red'))
+    .createTimeline('20', frame.clear().fontShadow('0 0 2px orange').color('orange'))
+    .createTimeline('40', frame.clear().fontShadow('0 0 2px orange').color('yellow'))
+    .createTimeline('60', frame.clear().fontShadow('0 0 2px orange').color('green'))
+    .createTimeline('80', frame.clear().fontShadow('0 0 2px orange').color('blue'))
+    .createTimeline('100', frame.clear().color('purple'))
+    .develop();
+
+
+
+// Add it to AnimateJS instance
+animate.add(bounceAnimation);
+
+animate.animate(container,'custom.rainbow',{
+    timing: animate.EASE_IN_OUT,
+    duration: animate.SLOW,
+    mode: animate.FORWARDS,
+    count: animate.ANIMATION_INFINITE
+});
+```
+
+***
+
 ## Built in animations
 | Animation | Path |
 | --------- | ---- |
