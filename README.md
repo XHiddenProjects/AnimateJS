@@ -63,20 +63,20 @@ const animate = new AnimateJS(),
 
 const frame = new KeyFrames();
 // AnimationJS(pathName); The path would be "custom.rainbow"
-const bounceAnimation = new AnimationJS('custom', 'rainbow')
+const rainbowTextAnimation = new AnimationJS('custom', 'rainbow')
     // createTimeline(percentage|from-to, KeyFrames)
-    .createTimeline('0', frame.fontShadow('0 0 2px red').color('red'))
-    .createTimeline('20', frame.clear().fontShadow('0 0 2px orange').color('orange'))
-    .createTimeline('40', frame.clear().fontShadow('0 0 2px orange').color('yellow'))
-    .createTimeline('60', frame.clear().fontShadow('0 0 2px orange').color('green'))
-    .createTimeline('80', frame.clear().fontShadow('0 0 2px orange').color('blue'))
-    .createTimeline('100', frame.clear().color('purple'))
+    .createTimeline('0', frame.fontShadow({v:0,h:0,blur:2,color:'red'}).color('red'))
+    .createTimeline('20', frame.clear().fontShadow({v:0,h:0,blur:2,color:'orange'}).color('orange'))
+    .createTimeline('40', frame.clear().fontShadow({v:0,h:0,blur:2,color:'yellow'}).color('yellow'))
+    .createTimeline('60', frame.clear().fontShadow({v:0,h:0,blur:2,color:'green'}).color('green'))
+    .createTimeline('80', frame.clear().fontShadow({v:0,h:0,blur:2,color:'blue'}).color('blue'))
+    .createTimeline('100', frame.clear().fontShadow({v:0,h:0,blur:2,color:'purple'}).color('purple'))
     .develop();
 
 
 
 // Add it to AnimateJS instance
-animate.add(bounceAnimation);
+animate.add(rainbowTextAnimation);
 
 animate.animate(container,'custom.rainbow',{
     timing: animate.EASE_IN_OUT,
