@@ -25,7 +25,7 @@ const animate = new AnimateJS(),
 
 animate.animate(container,'fade.in');
 ```
-You can check out the in-built [animations](#built-in-animations)
+You can check out the in-built [animations](#built-in-animatations)
 
 ***
 
