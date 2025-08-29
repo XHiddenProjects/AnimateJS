@@ -10,6 +10,7 @@ To include the the script use the HTML code here
 <html>
 <head>
 <link rel="stylesheet" href="/path/to/animate.min.css"/>
+<link rel="stylesheet" href="/path/to/animate_draw.min.css"/>
 </head>
 <body>
 ...
@@ -84,7 +85,7 @@ animate.animate(container,'custom.rainbow',{
     timing: animate.EASE_IN_OUT,
     duration: animate.SLOW,
     mode: animate.FORWARDS,
-    count: animate.ANIMATION_INFINITE
+    count: animate.INFINITE
 });
 ```
 
@@ -199,7 +200,7 @@ Here are some constants that will make things easier for you
 
 | Constant | Value |
 | -------- | ----- |
-| ANIMATION_INFINITE | -1 |
+| INFINITE | -1 |
 
 **Timing**
 
