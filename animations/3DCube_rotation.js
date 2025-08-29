@@ -3,30 +3,17 @@ const animate = new AnimateJS();
 
 // Create a custom keyframe animation for rotating the cube
 const cubeRotation = new AnimationJS('cubeRotation','turn')
-  .createTimeline('0', 
+  .createTimeline('from', 
     new KeyFrames()
-    .rotate3D(0, 0, 0, 0) // Starting position
+    .rotate3D(0, 0, 0, 0) // Start at 45 degrees (or 0 if you prefer)
   )
-  .createTimeline('25', 
+  .createTimeline('to', 
     new KeyFrames()
-    .rotate3D(1, 2, 1, 180) // Rotate halfway
-  )
-  // Middle rotation at 50%
-  .createTimeline('50', 
-    new KeyFrames()
-    .rotate3D(2, 1, 3, 180) // Rotate halfway
-  )
-  .createTimeline('75', 
-    new KeyFrames()
-    .rotate3D(1, 1, 1, 180) // Rotate halfway
-  )
-  // Final rotation at 100%
-  .createTimeline('100', 
-    new KeyFrames()
-    .rotate3D(1, 1, 0, 360) // Complete full rotation
+    .rotate3D(1, 1, 0, 360) // Rotate full circle
   )
   .develop(); // Generate the callback
 
+// Apply the animation to the cube element
 const [cubeEl] = animate.Utils.$('.cube');
 animate.Utils.preserve3D(cubeEl);
 animate.add(cubeRotation);
