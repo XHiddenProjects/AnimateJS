@@ -20,6 +20,16 @@ To include the the script use the HTML code here
 </html>
 ```
 
+OR **jsDelivr**
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/XHiddenProjects/AnimateJS@1.0.2/animate.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/XHiddenProjects/AnimateJS@1.0.2/animate_draw.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/gh/XHiddenProjects/AnimateJS@1.0.2/animate.min.js"></script>
+```
+
+
 ## Animating
 To use the animate your object use the `animate()` method
 ```js
