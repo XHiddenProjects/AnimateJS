@@ -1,7 +1,7 @@
 # AnimateJS
 AnimateJS is a user-friendly library that simplifies creating smooth 2D and 3D animations using JavaScript and CSS. Ideal for adding dynamic, engaging effects to your web projects with minimal effort.
 
-**Check out the** [demo](https://jsfiddle.net/mg84pybw/1/)
+**Check out the** [2D demo](https://jsfiddle.net/mg84pybw/) or [3D demo](https://jsfiddle.net/ystbpz42/)
 
 ## Startup
 To include the the script use the HTML code here
